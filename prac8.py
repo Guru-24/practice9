@@ -14,3 +14,13 @@ while attempts < max_attempts:
         try:
             guess = int(input(f"\nAttempt {attempts + 1}/{max_attempts} - Enter your guess: "))
             attempts += 1
+            if guess == number:
+                print(f"🎉 Correct! You guessed it in {attempts} attempts.")
+                print(f"✅ Your score: {score}")
+                break
+            elif guess < number:
+                print("🔼 Too low! Try a higher number.")
+            else:
+                print("🔽 Too high! Try a lower number.")
+            score -= 10
+
