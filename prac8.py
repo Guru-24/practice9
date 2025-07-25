@@ -23,4 +23,10 @@ while attempts < max_attempts:
             else:
                 print("🔽 Too high! Try a lower number.")
             score -= 10
+           except ValueError:
+            print("❗ Invalid input. Please enter a number.")
+
+    else:
+        print(f"\n❌ Game Over! The number was {number}.")
+        print(f"Your score: {score}")
 
