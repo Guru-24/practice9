@@ -29,4 +29,9 @@ while attempts < max_attempts:
     else:
         print(f"\n❌ Game Over! The number was {number}.")
         print(f"Your score: {score}")
+def main():
+    welcome()
+    while True:
+        play_game()
+        again = input("\nDo you want to play again? (yes/no): ").strip().lower()
 
