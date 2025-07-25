@@ -10,4 +10,7 @@ def play_game():
     attempts = 0
     max_attempts = 10
     score = 100
-
+while attempts < max_attempts:
+        try:
+            guess = int(input(f"\nAttempt {attempts + 1}/{max_attempts} - Enter your guess: "))
+            attempts += 1
