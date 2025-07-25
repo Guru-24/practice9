@@ -34,4 +34,9 @@ def main():
     while True:
         play_game()
         again = input("\nDo you want to play again? (yes/no): ").strip().lower()
+if again != 'yes':
+            print("Thanks for playing! Goodbye 👋")
+            break
 
+if __name__ == "__main__":
+    main()
