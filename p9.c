@@ -18,4 +18,8 @@ printf("Enter elements of 2nd matrix:\n");
       printf("Enter element b%d%d: ", i + 1, j + 1);
       scanf("%d", &b[i][j]);
     }
+for (i = 0; i < r; ++i)
+    for (j = 0; j < c; ++j) {
+      sum[i][j] = a[i][j] + b[i][j];
+    }
 
