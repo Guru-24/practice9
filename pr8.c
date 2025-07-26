@@ -14,4 +14,8 @@ for (int i = 1; i < n; ++i) {
       arr[0] = arr[i];
     }
   }
+printf("Largest element = %.2lf", arr[0]);
+
+  return 0;
+}
 
