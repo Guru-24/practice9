@@ -5,3 +5,8 @@ int main()
   double arr[100];
   printf("Enter the number of elements (1 to 100): ");
   scanf("%d", &n);
+  for (int i = 0; i < n; ++i) {
+    printf("Enter number%d: ", i + 1);
+    scanf("%lf", &arr[i]);
+  }
+
