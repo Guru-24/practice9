@@ -9,4 +9,9 @@ int main()
     printf("Enter number%d: ", i + 1);
     scanf("%lf", &arr[i]);
   }
+for (int i = 1; i < n; ++i) {
+    if (arr[0] < arr[i]) {
+      arr[0] = arr[i];
+    }
+  }
 
